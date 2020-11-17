@@ -30,6 +30,7 @@ class HomePage extends StatelessWidget{
       body: Column(
         children: [
           Expanded(
+            flex: 2,
       child: Container(
             decoration: BoxDecoration(
               image: DecorationImage(image: AssetImage("assets/images/IVENTORS_INITIATIVES.png"),
@@ -38,6 +39,7 @@ class HomePage extends StatelessWidget{
           ),
           ),
           Expanded(
+            flex: 1,
               child: Column(
                 children: [
                   RichText(
@@ -68,7 +70,17 @@ class HomePage extends StatelessWidget{
                   )
                 ],
               ),
-          )
+          ),
+          Expanded(flex: 1,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              CircularProgressIndicator(),
+              Padding(padding: EdgeInsets.only(top: 20.0),
+              ),
+              Text("Loading",style: TextStyle(color: Colors.white,fontSize: 18.0,fontWeight: FontWeight.bold)),
+            ],
+          ),)
         ],
       ) ,
     );
