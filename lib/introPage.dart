@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'constants.dart';
-import 'loginPage.dart';
+import 'teacher_app/constants.dart';
+import 'teacher_app/loginPage.dart';
 
 class IntroPage extends StatelessWidget {
   Widget createButton(String text, Color buttonColor, Color textColor) {
