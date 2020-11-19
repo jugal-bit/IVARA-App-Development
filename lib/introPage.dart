@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ivara_techer_app/parents_app/loginpageparents.dart';
 import 'teacher_app/constants.dart';
 import 'teacher_app/loginPage.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class IntroPage extends StatelessWidget {
   Widget createButton(String text, Color buttonColor, Color textColor) {
@@ -11,7 +12,17 @@ class IntroPage extends StatelessWidget {
         height: height * 0.065,
         minWidth: width * 0.5,
         child: RaisedButton(
-            onPressed: () {},
+            onPressed: () {
+              // Uncomment this section and run the app, click on Parents and if you see 'Connected' in terminal then it means firebase is connected.
+            //   Firestore.instance
+            //   .collection('dummy/TJi0QgSPT1VGzzavB0lK/messages')
+            //   .snapshots()
+            //   .listen(
+            //     (data) {
+            //       print(data.documents[0]['text']);
+            //     },
+            //   );
+            },
             color: buttonColor,
             child: Text(
               text,
