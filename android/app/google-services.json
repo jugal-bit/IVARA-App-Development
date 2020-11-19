@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "903459237652",
+    "firebase_url": "https://ivara-app-development.firebaseio.com",
+    "project_id": "ivara-app-development",
+    "storage_bucket": "ivara-app-development.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903459237652:android:a2082b4ddb995f66b19c01",
+        "android_client_info": {
+          "package_name": "com.example.ivara_techer_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903459237652-8o8870ui55tv489g6toejcpc9ojim5a6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqhrRrg_D8q43U3JQMXdPNBEMULZnet1Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903459237652-8o8870ui55tv489g6toejcpc9ojim5a6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
