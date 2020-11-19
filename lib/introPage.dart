@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ivara_techer_app/parents_app/loginpageparents.dart';
 import 'teacher_app/constants.dart';
 import 'teacher_app/loginPage.dart';
 
@@ -55,7 +56,31 @@ class IntroPage extends StatelessWidget {
                 'assets/vector1.jpeg',
                 alignment: Alignment.center,
               ),
-              createButton('Parents', Colors.black, Colors.white),
+              // createButton('Parents', Colors.black, Colors.white),
+              Padding(
+                padding: EdgeInsets.all(height * 0.008),
+                child: ButtonTheme(
+                  height: height * 0.065,
+                  minWidth: width * 0.5,
+                  child: RaisedButton(
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPagep()));
+                    },
+                    color: Colors.black,
+                    child: Text(
+                      'Parents',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: height * 0.03,
+                          letterSpacing: 1),
+                    ),
+                    shape: RoundedRectangleBorder(
+                      side: BorderSide(color: Colors.black, width: 2),
+                      borderRadius: new BorderRadius.circular(10.0),
+                    ),
+                  ),
+                ),
+              ),
               createButton('Students', Colors.yellow, Colors.white),
               Padding(
                 padding: EdgeInsets.all(height * 0.008),
