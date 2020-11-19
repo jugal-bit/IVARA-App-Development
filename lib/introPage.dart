@@ -36,10 +36,8 @@ class IntroPage extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 25.0),
                 child: Center(
-                  child: Text(
-                    'Welcome to IVentors Initiatives',
-                    style: headingstyle
-                  ),
+                  child: Text('Welcome to IVentors Initiatives',
+                      style: headingstyle),
                 ),
               ),
               Center(
@@ -89,7 +87,8 @@ class IntroPage extends StatelessWidget {
                   minWidth: width * 0.5,
                   child: RaisedButton(
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => LoginPage()));
                     },
                     color: Colors.white,
                     child: Text(
