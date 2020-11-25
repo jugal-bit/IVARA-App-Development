@@ -11,6 +11,14 @@ class Homepar extends StatefulWidget{
 class _HomeparState extends  State<Homepar>{
 
   int _currentindex = 0;
+
+  final tabs = [
+    Center(child: Text('Home')),
+    Center(child: Text('Academic')),
+    Center(child: Text('Teacher List')),
+    Center(child: Text('Profile')),
+
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,8 +26,12 @@ class _HomeparState extends  State<Homepar>{
        title: Text('Home Bar'),
      ),
       body: Container(),
+
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentindex,
+        //    backgroundColor: Colors.black,
+          type: BottomNavigationBarType.fixed,
+          iconSize: 40,
           items: [
             BottomNavigationBarItem(
           icon: Icon(Icons.date_range_sharp),
@@ -27,9 +39,9 @@ class _HomeparState extends  State<Homepar>{
     backgroundColor: Colors.black
     ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.list),
+                icon: Icon(Icons.add_shopping_cart),
                 title: Text('Academic'),
-                backgroundColor: Colors.black
+               backgroundColor: Colors.black
             ),
             BottomNavigationBarItem(
                 icon: Icon(Icons.home),
@@ -39,7 +51,7 @@ class _HomeparState extends  State<Homepar>{
             BottomNavigationBarItem(
                 icon: Icon(Icons.person),
                 title: Text('Profile'),
-                backgroundColor: Colors.black
+               backgroundColor: Colors.black
             ),
       ],
       onTap: (index){
