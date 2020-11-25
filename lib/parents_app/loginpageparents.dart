@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:ivara_techer_app/parents_app/homeparents.dart';
 import 'package:ivara_techer_app/parents_app/signuppageparents.dart';
 import 'package:ivara_techer_app/teacher_app/constants.dart';
 
@@ -89,7 +90,9 @@ class _LoginPagepState  extends State<LoginPagep>{
                   height: height * 0.07,
                   minWidth: width * 0.5,
                   child: RaisedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context,MaterialPageRoute(builder: (context)=>Homepar()));
+                      },
                       color: Colors.yellow,
                       child: Text(
                         'Login',

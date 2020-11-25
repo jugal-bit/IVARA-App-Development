@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ivara_techer_app/teacher_app/constants.dart';
 
+import 'loginpageparents.dart';
+
 class SignUpPage2 extends StatefulWidget {
   @override
   _SignUp2PageState createState() => _SignUp2PageState();
@@ -47,11 +49,16 @@ class _SignUp2PageState extends State<SignUpPage2> {
                       border: OutlineInputBorder(),
                       labelText: 'Name',
                       labelStyle: TextStyle(color: Colors.black, fontWeight: FontWeight.w600),
+
                       hintText: 'Your Full Name',
+
                     ),
                   ),
+
                 ),
+              
               ),
+
               Padding(
                 padding: textFieldPadding2,
                 child: Material(
@@ -90,6 +97,7 @@ class _SignUp2PageState extends State<SignUpPage2> {
                       labelText: 'School Code',
                       labelStyle: TextStyle(color: Colors.black, fontWeight: FontWeight.w600),
                       hintText: 'Your School Code',
+
                     ),
                   ),
                 ),
@@ -145,7 +153,9 @@ class _SignUp2PageState extends State<SignUpPage2> {
                 child: ButtonTheme(
                   height: height * 0.07,
                   child: RaisedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context,MaterialPageRoute(builder: (context)=>LoginPagep()));
+                      },
                       color: Colors.yellow,
                       child: Text(
                         'Submit',
@@ -155,7 +165,8 @@ class _SignUp2PageState extends State<SignUpPage2> {
                             letterSpacing: 1),
                       ),
                       shape: new RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(10.0))),
+                          borderRadius: new BorderRadius.circular(10.0))
+                  ),
                 ),
               ),
             ],
