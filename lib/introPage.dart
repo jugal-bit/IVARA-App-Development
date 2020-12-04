@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ivara_techer_app/teacher_app/classes.dart';
+import 'package:ivara_techer_app/teacher_app/mentors.dart';
 import 'package:ivara_techer_app/teacher_app/referralScreen.dart';
 import 'package:ivara_techer_app/parents_app/loginpageparents.dart';
 import 'teacher_app/constants.dart';
@@ -99,7 +101,7 @@ class IntroPage extends StatelessWidget {
                   minWidth: width * 0.5,
                   child: RaisedButton(
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => Referral()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Mentors()));
                     },
                     color: Colors.white,
                     child: Text(
