@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:ivara_techer_app/teacher_app/tabs/academicReport.dart';
-import 'package:ivara_techer_app/teacher_app/tabs/bottomNavigation.dart';
-import 'package:ivara_techer_app/teacher_app/tabs/classesTab.dart';
-import 'package:ivara_techer_app/teacher_app/tabs/discussion.dart';
-import 'package:ivara_techer_app/teacher_app/tabs/labs.dart';
+import 'tabs/academicReport.dart';
+import 'bottomNavigation.dart';
+import 'tabs/classesTab.dart';
+import 'tabs/discussion.dart';
+import 'tabs/labs.dart';
 
 import 'constants.dart';
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ivara_techer_app/teacher_app/classes.dart';
-import 'package:ivara_techer_app/teacher_app/mentors.dart';
+import 'classes.dart';
+import 'mentors.dart';
 
 class BottomNavigation {
   Widget getBottomNavigationbar(context) {

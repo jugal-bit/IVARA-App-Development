@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ivara_techer_app/teacher_app/drawer.dart';
-import 'package:ivara_techer_app/teacher_app/tabs/bottomNavigation.dart';
+import 'drawer.dart';
+import 'bottomNavigation.dart';
 
 import 'constants.dart';
 
