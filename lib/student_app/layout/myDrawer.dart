@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:ivara_techer_app/student_app/layout/student_layout.dart';
+import 'package:ivara_techer_app/student_app/sidebar/about.dart';
+import 'package:ivara_techer_app/student_app/sidebar/chatWithUs.dart';
+import 'package:ivara_techer_app/student_app/sidebar/faq.dart';
+import 'package:ivara_techer_app/student_app/sidebar/referral.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
+
 
 class MyDrawer extends StatelessWidget {
   final Function onTap;
@@ -43,18 +49,28 @@ class MyDrawer extends StatelessWidget {
             CustomListTile(
               LineAwesomeIcons.home,
               'Home',
-              () => {},
+              () => {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => LayoutPage()))
+              },
             ),
             CustomListTile(
-                LineAwesomeIcons.rocket_chat, 'Chat With Us', () => {}),
+                LineAwesomeIcons.rocket_chat, 'Chat With Us', () => {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => ChatWithUs()))
+                }),
             CustomListTile(
-                LineAwesomeIcons.ios_app_store, 'About IVentors', () => {}),
+                LineAwesomeIcons.ios_app_store, 'About IVentors', () => {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => About()))
+                }),
             CustomListTile(
-                LineAwesomeIcons.user_circle, 'My Profile', () => {}),
-            CustomListTile(
-                LineAwesomeIcons.comment_dollar, 'My Referrals', () => {}),
-            CustomListTile(LineAwesomeIcons.question, 'FAQ\'s', () => {}),
-            CustomListTile(Icons.exit_to_app, 'Logout', () => {}),
+                LineAwesomeIcons.comment_dollar, 'My Referrals', () => {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Referral()))
+                }),
+            CustomListTile(LineAwesomeIcons.question, 'FAQ\'s', () => {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Faq()))
+                }),
+            CustomListTile(Icons.exit_to_app, 'Logout', () => {
+              Navigator.pop(context)
+            }),
           ],
         ),
       ),

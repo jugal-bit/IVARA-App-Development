@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ivara_techer_app/student_app/test/student_test.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
-
 import '../../homePage.dart';
+import '../announcement.dart';
 import '../student_mentor.dart';
 import '../student_profile.dart';
 import 'myDrawer.dart';
@@ -17,37 +17,6 @@ class LayoutPage extends StatefulWidget {
 
 class _LayoutPageState extends State<LayoutPage> {
   int index = 0;
-  final topBar = new AppBar(
-    backgroundColor: Colors.black,
-    centerTitle: true,
-    elevation: 1.0,
-    // leading: Builder(
-    //   builder: (BuildContext context) {
-    //     return IconButton(
-    //       icon: const Icon(Icons.menu),
-    //       onPressed: () {
-    //         Scaffold.of(context).openDrawer();
-    //       },
-    //       tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
-    //     );
-    //   },
-    // ),
-    title: SizedBox(
-        height: 35.0, child: Image.asset("assets/icons/logo_long.jpeg")),
-    actions: <Widget>[
-      Column(
-        children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.only(right: 12.0),
-            child: Icon(
-              Icons.announcement,
-              color: Colors.amberAccent,
-            ),
-          ),
-        ],
-      )
-    ],
-  );
 
   PageController _pageController = PageController();
 
@@ -73,7 +42,34 @@ class _LayoutPageState extends State<LayoutPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: topBar,
+        appBar: AppBar(
+                  backgroundColor: Colors.black,
+                  centerTitle: true,
+                  elevation: 1.0,
+                  // leading: Builder(
+                  //   builder: (BuildContext context) {
+                  //     return IconButton(
+                  //       icon: const Icon(Icons.menu),
+                  //       onPressed: () {
+                  //         Scaffold.of(context).openDrawer();
+                  //       },
+                  //       tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+                  //     );
+                  //   },
+                  // ),
+                  title: SizedBox(
+                      height: 35.0, child: Image.asset("assets/icons/logo_long.jpeg")),
+                  actions: <Widget>[
+                    IconButton(
+                      icon: Icon(Icons.announcement),
+                      color: Colors.amberAccent,
+                      highlightColor: Colors.white,
+                      onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Announcement()));
+                      },
+                    )
+                  ],
+                ),
         body: PageView(
           controller: _pageController,
           children: _screen,

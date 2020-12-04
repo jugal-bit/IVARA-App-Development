@@ -3,9 +3,12 @@ import 'package:ivara_techer_app/student_app/home/classDashboard.dart';
 import 'package:ivara_techer_app/student_app/layout/myDrawer.dart';
 import 'package:ivara_techer_app/student_app/layout/student_layout.dart';
 import 'package:ivara_techer_app/student_app/student_profile.dart';
+import 'package:ivara_techer_app/teacher_app/classes.dart';
 import 'package:ivara_techer_app/teacher_app/referralScreen.dart';
 import 'package:ivara_techer_app/parents_app/loginpageparents.dart';
 import 'homePage.dart';
+
+
 import 'teacher_app/constants.dart';
 import 'teacher_app/loginPage.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -95,32 +98,32 @@ class IntroPage extends StatelessWidget {
                     ),
                   ),
                 ),
-              ),
-             // createButton('Students', Colors.yellow, Colors.white),
-              Padding(
+              ),Padding(
                 padding: EdgeInsets.all(height * 0.008),
                 child: ButtonTheme(
                   height: height * 0.065,
                   minWidth: width * 0.5,
                   child: RaisedButton(
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => LayoutPage()));
                     },
-                    color: Colors.black,
+                    color: Colors.amber,
                     child: Text(
                       'Students',
                       style: TextStyle(
-                          color: Colors.white,
+                          color: Colors.black,
                           fontSize: height * 0.03,
                           letterSpacing: 1),
                     ),
                     shape: RoundedRectangleBorder(
-                      side: BorderSide(color: Colors.black, width: 2),
+                      side: BorderSide(color: Colors.amber, width: 2),
                       borderRadius: new BorderRadius.circular(10.0),
                     ),
                   ),
                 ),
               ),
+             // createButton('Students', Colors.yellow, Colors.white),
+             
               Padding(
                 padding: EdgeInsets.all(height * 0.008),
                 child: ButtonTheme(
@@ -128,7 +131,7 @@ class IntroPage extends StatelessWidget {
                   minWidth: width * 0.5,
                   child: RaisedButton(
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => Referral()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => ClassPage()));
                     },
                     color: Colors.white,
                     child: Text(

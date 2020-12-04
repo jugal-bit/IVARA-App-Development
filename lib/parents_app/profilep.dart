@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ivara_techer_app/parents_app/loginpageparents.dart';
+
 
 class Profilep extends StatefulWidget{
   @override
@@ -126,7 +126,7 @@ class _ProfilepState extends State<Profilep> {
                       width:  200,
                       child: RaisedButton(
                         onPressed: (){
-                          Navigator.push(context,MaterialPageRoute(builder: (context)=>LoginPagep()));
+                        //  Navigator.push(context,MaterialPageRoute(builder: (context)=>LoginPagep()));
                         },
                         color: Colors.black54,
                         child: Center(

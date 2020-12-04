@@ -1,9 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ivara_techer_app/parents_app/academicp.dart';
-import 'package:ivara_techer_app/parents_app/attendancep.dart';
 import 'package:ivara_techer_app/parents_app/profilep.dart';
 import 'package:ivara_techer_app/parents_app/teacherslistp.dart';
+
+import 'academicp.dart';
+import 'attendancep.dart';
+
 
 class Homepar extends StatefulWidget{
   @override
