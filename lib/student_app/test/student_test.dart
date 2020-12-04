@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:condition/condition.dart';
-import 'package:student_iventors_app/test/mock_pyq.dart';
-import 'package:student_iventors_app/test/mock_quiz.dart';
-import 'package:student_iventors_app/test/mock_test.dart';
+
+import 'mock_pyq.dart';
+import 'mock_quiz.dart';
+import 'mock_test.dart';
+
 
 class TestPage extends StatefulWidget {
   TestPage({Key key}) : super(key: key);

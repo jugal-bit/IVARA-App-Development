@@ -1,17 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:ivara_techer_app/homePage.dart';
 
-
-class Teacherlistp extends StatefulWidget{
+class subject3acap extends StatefulWidget{
   @override
 
-  _TeacherlistpState  createState() => _TeacherlistpState();
+  _Subject3acapState  createState() => _Subject3acapState();
 
 }
 
-class _TeacherlistpState extends State<Teacherlistp> {
-
+class _Subject3acapState extends State<subject3acap> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +22,7 @@ class _TeacherlistpState extends State<Teacherlistp> {
                 alignment: Alignment.center,
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Text('Teachers', style: TextStyle(color: Colors.white,fontSize: 50.0,fontWeight: FontWeight.bold),),
+                  child: Text(' Chemistry ', style: TextStyle(color: Colors.white,fontSize: 50.0,fontWeight: FontWeight.bold),),
                 ),
               ),
             ),
@@ -45,6 +41,30 @@ class _TeacherlistpState extends State<Teacherlistp> {
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.fromLTRB(20,20,20,0),
+                  child: Center(
+                    child: Text('LAST EXAM SCORE: 75%',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 30.0,
+                          fontWeight: FontWeight.w600
+                      ),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20,30,20,0),
+                  child: Center(
+                    child: Text('Previous Text Results:',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 30.0,
+                          fontWeight: FontWeight.w600
+                      ),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20,20,20,0),
                   child: Container(
                     height: 85.0,
                     child: new SizedBox(
@@ -55,7 +75,7 @@ class _TeacherlistpState extends State<Teacherlistp> {
                         },
                         color: Colors.white,
                         child: Text(
-                          'Biology',
+                          'Test-4        85%',
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: 40.0,
@@ -83,7 +103,7 @@ class _TeacherlistpState extends State<Teacherlistp> {
                         },
                         color: Colors.white,
                         child: Text(
-                          'Physics',
+                          'Test-3        65%',
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: 40.0,
@@ -111,7 +131,7 @@ class _TeacherlistpState extends State<Teacherlistp> {
                         },
                         color: Colors.white,
                         child: Text(
-                          'Chemistry',
+                          'Test-2        65%',
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: 40.0,
@@ -139,35 +159,7 @@ class _TeacherlistpState extends State<Teacherlistp> {
                         },
                         color: Colors.white,
                         child: Text(
-                          'History',
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 40.0,
-                              letterSpacing: 1),
-                        ),
-                        shape: RoundedRectangleBorder(
-                          side: BorderSide(color: Colors.black12, width: 2),
-                          borderRadius: new BorderRadius.circular(15.0),
-                        ),
-                        padding: const EdgeInsets.all(8.0),
-
-                      ),
-                    ), // decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(20)),border: Border.all(width: 1.0, color: Colors.amberAccent)),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(20,20,20,0),
-                  child: Container(
-                    height: 85.0,
-                    child: new SizedBox(
-                      width: 320.0,
-
-                      child: RaisedButton(
-                        onPressed: () {
-                        },
-                        color: Colors.white,
-                        child: Text(
-                          'Geography',
+                          'Test-1        55%',
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: 40.0,
@@ -192,3 +184,4 @@ class _TeacherlistpState extends State<Teacherlistp> {
     );
   }
 }
+

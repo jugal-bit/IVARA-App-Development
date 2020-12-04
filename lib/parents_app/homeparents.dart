@@ -40,35 +40,34 @@ class _HomeparState extends  State<Homepar>{
   //   ),
       body: _children[_currentindex],
       bottomNavigationBar: BottomNavigationBar(
-
-        //    backgroundColor: Colors.black,
-
-          type: BottomNavigationBarType.fixed,
+          backgroundColor: Colors.black,
+         type: BottomNavigationBarType.fixed,
         currentIndex: _currentindex,
-          iconSize: 40,
+          iconSize: 35,
         onTap: onTappedBar,
           items: [
             BottomNavigationBarItem(
           icon: Icon(Icons.date_range_sharp),
-    title: Text('Attendance'),
-    backgroundColor: Colors.black
+                label: 'Attendance',
+                backgroundColor: Colors.white
     ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.add_shopping_cart),
-                title: Text('Academic'),
-               backgroundColor: Colors.black
+                icon: Icon(Icons.integration_instructions),
+               label: 'Academics',
+               backgroundColor: Colors.white
             ),
             BottomNavigationBarItem(
                 icon: Icon(Icons.home),
-                title: Text('Teachers List'),
-                backgroundColor: Colors.black
+                label: 'Teachers List',
+                backgroundColor: Colors.white
             ),
             BottomNavigationBarItem(
                 icon: Icon(Icons.person),
-                title: Text('Profile'),
-               backgroundColor: Colors.black
+                label: 'Profile',
+               backgroundColor: Colors.white
             ),
       ],
+        selectedItemColor: Colors.yellow,
 
     ),
     );

@@ -102,7 +102,9 @@ class _LoginPagepState  extends State<LoginPagep>{
                             letterSpacing: 1),
                       ),
                       shape: new RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(10.0))),
+                          borderRadius: new BorderRadius.circular(10.0)
+                      ),
+                  ),
                 ),
               ),
               SizedBox(
