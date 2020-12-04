@@ -3,6 +3,8 @@ import 'package:ivara_app_development/teacher_app/classes.dart';
 import 'package:ivara_app_development/teacher_app/mentors.dart';
 import 'package:ivara_app_development/teacher_app/referralScreen.dart';
 import 'package:ivara_app_development/parents_app/loginpageparents.dart';
+import 'package:ivara_app_development/student_app/layout/student_layout.dart';
+import 'package:ivara_app_development/student_app/layout/student_layout.dart';
 import 'teacher_app/constants.dart';
 import 'teacher_app/loginPage.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -92,8 +94,30 @@ class IntroPage extends StatelessWidget {
                     ),
                   ),
                 ),
+              ),Padding(
+                padding: EdgeInsets.all(height * 0.008),
+                child: ButtonTheme(
+                  height: height * 0.065,
+                  minWidth: width * 0.5,
+                  child: RaisedButton(
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => LayoutPage()));
+                    },
+                    color: Colors.amber,
+                    child: Text(
+                      'Students',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: height * 0.03,
+                          letterSpacing: 1),
+                    ),
+                    shape: RoundedRectangleBorder(
+                      side: BorderSide(color: Colors.amber, width: 2),
+                      borderRadius: new BorderRadius.circular(10.0),
+                    ),
+                  ),
+                ),
               ),
-              createButton('Students', Colors.yellow, Colors.white),
               Padding(
                 padding: EdgeInsets.all(height * 0.008),
                 child: ButtonTheme(

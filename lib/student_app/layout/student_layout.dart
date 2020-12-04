@@ -63,7 +63,7 @@ class _LayoutPageState extends State<LayoutPage> {
                       color: Colors.amberAccent,
                       highlightColor: Colors.white,
                       onPressed: () {
-                        Navigator.pushNamed(context, Announcement.id);
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Announcement()));
                       },
                     )
                   ],
