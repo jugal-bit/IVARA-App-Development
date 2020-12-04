@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ivara_techer_app/parents_app/loginpageparents.dart';
+import 'package:ivara_app_development/parents_app/loginpageparents.dart';
 
 class Profilep extends StatefulWidget{
   @override

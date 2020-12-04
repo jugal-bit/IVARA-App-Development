@@ -1,8 +1,8 @@
 
 import 'package:flutter/material.dart';
-import 'package:ivara_techer_app/parents_app/homeparents.dart';
-import 'package:ivara_techer_app/parents_app/signuppageparents.dart';
-import 'package:ivara_techer_app/teacher_app/constants.dart';
+import 'package:ivara_app_development/parents_app/homeparents.dart';
+import 'package:ivara_app_development/parents_app/signuppageparents.dart';
+import 'package:ivara_app_development/teacher_app/constants.dart';
 
 
 class LoginPagep extends StatefulWidget{
