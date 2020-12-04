@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ivara_techer_app/teacher_app/drawer.dart';
+import 'package:ivara_techer_app/teacher_app/tabs/bottomNavigation.dart';
 
 import 'constants.dart';
 
@@ -80,29 +81,7 @@ class _MentorsState extends State<Mentors> {
           )
         ]),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        backgroundColor: Colors.black,
-        items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home, color:Colors.white),
-            title: Text('IVentors',style: TextStyle(color:Colors.white)),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.business, color:Colors.white),
-            title: Text('Tests',style: TextStyle(color:Colors.white)),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.school, color:Colors.white),
-            title: Text('Mentor',style: TextStyle(color:Colors.white)),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.school, color:Colors.white),
-            title: Text('Profile',style: TextStyle(color:Colors.white)),
-          ),
-        ],
-        currentIndex: 0,
-      ),
+      bottomNavigationBar: BottomNavigation().getBottomNavigationbar(context),
     );
   }
 }

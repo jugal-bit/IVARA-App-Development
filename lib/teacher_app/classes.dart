@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ivara_techer_app/teacher_app/class.dart';
+import 'package:ivara_techer_app/teacher_app/tabs/bottomNavigation.dart';
 import 'drawer.dart';
 import 'constants.dart';
 
@@ -8,7 +10,6 @@ class ClassPage extends StatefulWidget {
 }
 
 class _ClassPageState extends State<ClassPage> {
-  // Map<String, String> class7 = {};
   List<Map<String, String>> classes = [
     {'image': './assets/class7.jpg', 'classnum': 'Class 7'},
     {'image': './assets/class7.jpg', 'classnum': 'Class 8'}
@@ -31,9 +32,7 @@ class _ClassPageState extends State<ClassPage> {
                   child: AppBar(
                     backgroundColor: Colors.transparent,
                     elevation: 0,
-                    actions: [
-                      Icon(Icons.notifications)
-                    ],
+                    actions: [Icon(Icons.notifications)],
                   ),
                 )
               ],
@@ -44,28 +43,33 @@ class _ClassPageState extends State<ClassPage> {
                 crossAxisCount: 2,
                 children: List.generate(2, (index) {
                   return Center(
-                    child: Stack(
-                      children: [
-                        Image.asset(classes[index]['image']),
-                        Positioned(
-                          top: height * 0.24,
-                          left: width * 0.13,
-                          child: Text(
-                            classes[index]['classnum'],
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: height * 0.035,
-                              fontWeight: FontWeight.bold,
-                              shadows: <Shadow>[
-                                Shadow(
-                                    offset: Offset(2, 3),
-                                    blurRadius: 7.0,
-                                    color: Colors.black),
-                              ],
+                    child: GestureDetector(
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => ParticularClass()));
+                      },
+                      child: Stack(
+                        children: [
+                          Image.asset(classes[index]['image']),
+                          Positioned(
+                            top: height * 0.24,
+                            left: width * 0.13,
+                            child: Text(
+                              classes[index]['classnum'],
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: height * 0.035,
+                                fontWeight: FontWeight.bold,
+                                shadows: <Shadow>[
+                                  Shadow(
+                                      offset: Offset(2, 3),
+                                      blurRadius: 7.0,
+                                      color: Colors.black),
+                                ],
+                              ),
                             ),
-                          ),
-                        )
-                      ],
+                          )
+                        ],
+                      ),
                     ),
                   );
                 }),
@@ -84,8 +88,8 @@ class _ClassPageState extends State<ClassPage> {
                       height: height * 0.25, width: width * 0.8),
                 ),
                 Positioned(
-                  top:height*0.2,
-                  left:width*0.15,
+                  top: height * 0.2,
+                  left: width * 0.15,
                   child: Text(
                     'Skill Development',
                     style: TextStyle(
@@ -107,29 +111,7 @@ class _ClassPageState extends State<ClassPage> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        backgroundColor: Colors.black,
-        items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home, color:Colors.white),
-            title: Text('IVentors',style: TextStyle(color:Colors.white)),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.business, color:Colors.white),
-            title: Text('Tests',style: TextStyle(color:Colors.white)),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.school, color:Colors.white),
-            title: Text('Mentor',style: TextStyle(color:Colors.white)),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.school, color:Colors.white),
-            title: Text('Profile',style: TextStyle(color:Colors.white)),
-          ),
-        ],
-        currentIndex: 0,
-      ),
+      bottomNavigationBar: BottomNavigation().getBottomNavigationbar(context),
     );
   }
 }

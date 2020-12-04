@@ -101,7 +101,7 @@ class IntroPage extends StatelessWidget {
                   minWidth: width * 0.5,
                   child: RaisedButton(
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => Mentors()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => ClassPage()));
                     },
                     color: Colors.white,
                     child: Text(
