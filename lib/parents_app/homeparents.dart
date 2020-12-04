@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ivara_techer_app/parents_app/academicp.dart';
-import 'package:ivara_techer_app/parents_app/attendancep.dart';
-import 'package:ivara_techer_app/parents_app/profilep.dart';
-import 'package:ivara_techer_app/parents_app/teacherslistp.dart';
+import 'package:ivara_app_development/parents_app/academicp.dart';
+import 'package:ivara_app_development/parents_app/attendancep.dart';
+import 'package:ivara_app_development/parents_app/profilep.dart';
+import 'package:ivara_app_development/parents_app/teacherslistp.dart';
 
 class Homepar extends StatefulWidget{
   @override
@@ -49,7 +49,7 @@ class _HomeparState extends  State<Homepar>{
         onTap: onTappedBar,
           items: [
             BottomNavigationBarItem(
-          icon: Icon(Icons.date_range_sharp),
+          icon: Icon(Icons.date_range),
     title: Text('Attendance'),
     backgroundColor: Colors.black
     ),
