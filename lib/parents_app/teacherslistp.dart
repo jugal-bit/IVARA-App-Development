@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:ivara_techer_app/homePage.dart';
+import '../homePage.dart';
 
 
 class Teacherlistp extends StatefulWidget{

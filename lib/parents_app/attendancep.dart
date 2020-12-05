@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:ivara_techer_app/parents_app/subject1p.dart';
-import 'package:ivara_techer_app/parents_app/subject2p.dart';
-import 'package:ivara_techer_app/parents_app/subject3p.dart';
-import 'package:ivara_techer_app/parents_app/subject4p.dart';
-import 'package:ivara_techer_app/parents_app/subject5p.dart';
+import './subject1p.dart';
+import './subject2p.dart';
+import './subject3p.dart';
+import './subject4p.dart';
+import './subject5p.dart';
 
 class Attendancep extends StatefulWidget{
   @override

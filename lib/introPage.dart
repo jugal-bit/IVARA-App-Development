@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:ivara_techer_app/student_app/home/classDashboard.dart';
-import 'package:ivara_techer_app/student_app/layout/myDrawer.dart';
-import 'package:ivara_techer_app/student_app/layout/student_layout.dart';
-import 'package:ivara_techer_app/student_app/student_profile.dart';
-import 'package:ivara_techer_app/teacher_app/classes.dart';
-import 'package:ivara_techer_app/teacher_app/referralScreen.dart';
-import 'package:ivara_techer_app/parents_app/loginpageparents.dart';
+import './student_app/home/classDashboard.dart';
+import './student_app/layout/myDrawer.dart';
+import './student_app/layout/student_layout.dart';
+import './student_app/student_profile.dart';
+import './teacher_app/classes.dart';
+import './teacher_app/referralScreen.dart';
+import './parents_app/loginpageparents.dart';
 import 'homePage.dart';
 
 

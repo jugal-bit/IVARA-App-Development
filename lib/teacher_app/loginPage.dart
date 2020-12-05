@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:ivara_techer_app/teacher_app/signupPage.dart';
+import 'signupPage.dart';
 import 'constants.dart';
 
 class LoginPage extends StatefulWidget {

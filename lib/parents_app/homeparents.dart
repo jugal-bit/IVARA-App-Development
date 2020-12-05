@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ivara_techer_app/parents_app/profilep.dart';
-import 'package:ivara_techer_app/parents_app/teacherslistp.dart';
+import './profilep.dart';
+import './teacherslistp.dart';
 
 import 'academicp.dart';
 import 'attendancep.dart';
@@ -50,22 +50,22 @@ class _HomeparState extends  State<Homepar>{
           items: [
             BottomNavigationBarItem(
           icon: Icon(Icons.date_range_sharp),
-                label: 'Attendance',
+                title: Text('Attendance'),
                 backgroundColor: Colors.white
     ),
             BottomNavigationBarItem(
                 icon: Icon(Icons.integration_instructions),
-               label: 'Academics',
+               title: Text('Academics'),
                backgroundColor: Colors.white
             ),
             BottomNavigationBarItem(
                 icon: Icon(Icons.home),
-                label: 'Teachers List',
+                title: Text('Teachers List'),
                 backgroundColor: Colors.white
             ),
             BottomNavigationBarItem(
                 icon: Icon(Icons.person),
-                label: 'Profile',
+                title: Text('Profile'),
                backgroundColor: Colors.white
             ),
       ],

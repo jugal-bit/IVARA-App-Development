@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:ivara_techer_app/parents_app/subject1ap.dart';
-import 'package:ivara_techer_app/parents_app/subject2ap.dart';
-import 'package:ivara_techer_app/parents_app/subject3ap.dart';
-import 'package:ivara_techer_app/parents_app/subject4ap.dart';
-import 'package:ivara_techer_app/parents_app/subject5ap.dart';
+import './subject1ap.dart';
+import './subject2ap.dart';
+import './subject3ap.dart';
+import './subject4ap.dart';
+import './subject5ap.dart';
 
 class Academicp extends StatefulWidget{
   @override

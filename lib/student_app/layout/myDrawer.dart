@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:ivara_techer_app/student_app/layout/student_layout.dart';
-import 'package:ivara_techer_app/student_app/sidebar/about.dart';
-import 'package:ivara_techer_app/student_app/sidebar/chatWithUs.dart';
-import 'package:ivara_techer_app/student_app/sidebar/faq.dart';
-import 'package:ivara_techer_app/student_app/sidebar/referral.dart';
+import './student_layout.dart';
+import '../sidebar/about.dart';
+import '../sidebar/chatWithUs.dart';
+import '../sidebar/faq.dart';
+import '../sidebar/referral.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 

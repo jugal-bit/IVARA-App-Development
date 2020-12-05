@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ivara_techer_app/student_app/test/student_test.dart';
+import '../test/student_test.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import '../../homePage.dart';
 import '../announcement.dart';
