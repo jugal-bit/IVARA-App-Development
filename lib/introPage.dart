@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:ivara_app_development/teacher_app/classes.dart';
-import 'package:ivara_app_development/teacher_app/mentors.dart';
-import 'package:ivara_app_development/teacher_app/referralScreen.dart';
-import 'package:ivara_app_development/parents_app/loginpageparents.dart';
-import 'package:ivara_app_development/student_app/layout/student_layout.dart';
-import 'package:ivara_app_development/student_app/layout/student_layout.dart';
+import 'package:ivara_techer_app/student_app/home/classDashboard.dart';
+import 'package:ivara_techer_app/student_app/layout/myDrawer.dart';
+import 'package:ivara_techer_app/student_app/layout/student_layout.dart';
+import 'package:ivara_techer_app/student_app/student_profile.dart';
+import 'package:ivara_techer_app/teacher_app/classes.dart';
+import 'package:ivara_techer_app/teacher_app/referralScreen.dart';
+import 'package:ivara_techer_app/parents_app/loginpageparents.dart';
+import 'homePage.dart';
+
+
 import 'teacher_app/constants.dart';
 import 'teacher_app/loginPage.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -118,6 +122,8 @@ class IntroPage extends StatelessWidget {
                   ),
                 ),
               ),
+             // createButton('Students', Colors.yellow, Colors.white),
+             
               Padding(
                 padding: EdgeInsets.all(height * 0.008),
                 child: ButtonTheme(

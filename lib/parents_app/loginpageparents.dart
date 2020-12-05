@@ -1,8 +1,9 @@
 
 import 'package:flutter/material.dart';
-import 'package:ivara_app_development/parents_app/homeparents.dart';
-import 'package:ivara_app_development/parents_app/signuppageparents.dart';
-import 'package:ivara_app_development/teacher_app/constants.dart';
+import 'package:ivara_techer_app/parents_app/signuppageparents.dart';
+import 'package:ivara_techer_app/teacher_app/constants.dart';
+
+import 'homeparents.dart';
 
 
 class LoginPagep extends StatefulWidget{
@@ -102,7 +103,9 @@ class _LoginPagepState  extends State<LoginPagep>{
                             letterSpacing: 1),
                       ),
                       shape: new RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(10.0))),
+                          borderRadius: new BorderRadius.circular(10.0)
+                      ),
+                  ),
                 ),
               ),
               SizedBox(

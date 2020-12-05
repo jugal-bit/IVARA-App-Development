@@ -1,17 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:ivara_techer_app/homePage.dart';
 
-
-class Teacherlistp extends StatefulWidget{
+class subject5p extends StatefulWidget{
   @override
 
-  _TeacherlistpState  createState() => _TeacherlistpState();
+  _Subject5atpState  createState() => _Subject5atpState();
 
 }
 
-class _TeacherlistpState extends State<Teacherlistp> {
-
+class _Subject5atpState extends State<subject5p> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +22,7 @@ class _TeacherlistpState extends State<Teacherlistp> {
                 alignment: Alignment.center,
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Text('Teachers', style: TextStyle(color: Colors.white,fontSize: 50.0,fontWeight: FontWeight.bold),),
+                  child: Text('Geography', style: TextStyle(color: Colors.white,fontSize: 50.0,fontWeight: FontWeight.bold),),
                 ),
               ),
             ),
@@ -192,3 +188,4 @@ class _TeacherlistpState extends State<Teacherlistp> {
     );
   }
 }
+

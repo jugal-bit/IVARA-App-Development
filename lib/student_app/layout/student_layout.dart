@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:ivara_techer_app/student_app/test/student_test.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
-import 'package:ivara_app_development/student_app/student_mentor.dart';
-import 'package:ivara_app_development/student_app/student_profile.dart';
-import 'package:ivara_app_development/student_app/test/student_test.dart';
-import 'package:ivara_app_development/student_app/home/student_home.dart';
-import 'package:ivara_app_development/student_app/layout/myDrawer.dart';
-import 'package:ivara_app_development/student_app/announcement.dart';
+import '../../homePage.dart';
+import '../announcement.dart';
+import '../student_mentor.dart';
+import '../student_profile.dart';
+import 'myDrawer.dart';
+
+
 
 class LayoutPage extends StatefulWidget {
   static String id = 'layoutPage';
