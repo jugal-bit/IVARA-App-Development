@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'tabs/academicReport.dart';
-import 'bottomNavigation.dart';
 import 'tabs/classesTab.dart';
 import 'tabs/discussion.dart';
 import 'tabs/labs.dart';
@@ -86,7 +85,6 @@ class _ParticularClassState extends State<ParticularClass> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigation().getBottomNavigationbar(context),
     );
   }
 }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ivara_app_development/teacher_app/bottomNavigation.dart';
 import 'package:ivara_app_development/teacher_app/drawer.dart';
 
 import 'constants.dart';
@@ -85,7 +84,7 @@ class _AttendanceState extends State<Attendance> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: yellow,
-      drawer: TeacherDrawer().getDrawer(),
+      drawer: TeacherDrawer().getDrawer(context),
       appBar: AppBar(
         backgroundColor: yellow,
         elevation: 0,
@@ -237,7 +236,7 @@ class _AttendanceState extends State<Attendance> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigation().getBottomNavigationbar(context),
+      //bottomNavigationBar: BottomNavigation().getBottomNavigationbar(context),
     );
   }
 }

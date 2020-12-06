@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'drawer.dart';
-import 'bottomNavigation.dart';
 
 import 'constants.dart';
 
@@ -56,32 +54,10 @@ class _MentorsState extends State<Mentors> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      drawer: TeacherDrawer().getDrawer(),
-      backgroundColor: Colors.white,
-      body: SafeArea(
-        child: Column(children: [
-          Stack(
-            children: <Widget>[
-              Container(
-                height: height * 0.08,
-                color: Colors.white,
-              ),
-              Positioned(
-                child: AppBar(
-                  backgroundColor: Colors.transparent,
-                  elevation: 0,
-                  actions: [Icon(Icons.notifications)],
-                ),
-              )
-            ],
-          ),
-          Expanded(
-            child:  mentorsList()
-          )
-        ]),
-      ),
-      bottomNavigationBar: BottomNavigation().getBottomNavigationbar(context),
-    );
+    return Column(children: [
+        Expanded(
+          child:  mentorsList()
+        )
+      ]);
   }
 }

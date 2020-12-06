@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ivara_app_development/teacher_app/bottomNavigation.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:condition/condition.dart';
 import 'package:ivara_app_development/student_app/test/mock_pyq.dart';
@@ -86,240 +85,219 @@ class _TestPageState extends State<TestPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      body: SafeArea(
-        child: Column(
-          children: [
-            Stack(
-              children: <Widget>[
-                Container(
-                  height: height * 0.08,
-                  color: Colors.white,
-                ),
-                Positioned(
-                  child: AppBar(
-                    backgroundColor: Colors.transparent,
-                    elevation: 0,
-                    actions: [Icon(Icons.notifications)],
+    return Column(
+        children: [
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisSize: MainAxisSize.max,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        mock = 'Test';
+                      });
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(15, 20, 10, 10),
+                      child: Container(
+                          height: 180,
+                          width: 360,
+                          decoration: BoxDecoration(
+                            color: Colors.amberAccent,
+                            borderRadius: BorderRadius.circular(16),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey,
+                                blurRadius: 6.0,
+                                spreadRadius: 1.0,
+                                offset: Offset(
+                                  15.0,
+                                  15.0,
+                                ),
+                              )
+                            ],
+                          ),
+                          child: Row(
+                            children: <Widget>[
+                              Padding(
+                                padding: EdgeInsets.fromLTRB(4, 1, 1, 1),
+                                child: Image.asset("assets/icons/test1.png"),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.fromLTRB(31, 1, 1, 1),
+                                child: Text(
+                                  "Test Series",
+                                  style: TextStyle(fontSize: 20),
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.all(1),
+                                child:
+                                    Icon(LineAwesomeIcons.arrow_circle_right),
+                              )
+                            ],
+                          )),
+                    ),
                   ),
-                )
-              ],
-            ),
-            Expanded(
-              child: SingleChildScrollView(
-                child: Column(
-                  mainAxisSize: MainAxisSize.max,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          mock = 'Test';
-                        });
-                      },
-                      child: Padding(
-                        padding: const EdgeInsets.fromLTRB(15, 20, 10, 10),
-                        child: Container(
-                            height: 180,
-                            width: 360,
-                            decoration: BoxDecoration(
-                              color: Colors.amberAccent,
-                              borderRadius: BorderRadius.circular(16),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.grey,
-                                  blurRadius: 6.0,
-                                  spreadRadius: 1.0,
-                                  offset: Offset(
-                                    15.0,
-                                    15.0,
-                                  ),
-                                )
-                              ],
-                            ),
-                            child: Row(
-                              children: <Widget>[
-                                Padding(
-                                  padding: EdgeInsets.fromLTRB(4, 1, 1, 1),
-                                  child: Image.asset("assets/icons/test1.png"),
-                                ),
-                                Padding(
-                                  padding: EdgeInsets.fromLTRB(31, 1, 1, 1),
-                                  child: Text(
-                                    "Test Series",
-                                    style: TextStyle(fontSize: 20),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsets.all(1),
-                                  child:
-                                      Icon(LineAwesomeIcons.arrow_circle_right),
-                                )
-                              ],
-                            )),
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.all(1),
-                      child: Row(
-                        children: <Widget>[
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                mock = 'Quiz';
-                              });
-                            },
-                            child: Padding(
-                              padding: EdgeInsets.fromLTRB(18, 15, 1, 1),
-                              child: Container(
-                                  height: 90,
-                                  width: 170,
-                                  decoration: BoxDecoration(
-                                    color: Colors.amberAccent,
-                                    borderRadius: BorderRadius.circular(16),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Colors.grey,
-                                        blurRadius: 6.0,
-                                        spreadRadius: 1.0,
-                                        offset: Offset(
-                                          15.0,
-                                          15.0,
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: <Widget>[
-                                      Padding(
-                                        padding:
-                                            EdgeInsets.fromLTRB(31, 1, 5, 1),
-                                        child: Text(
-                                          "Quizzes",
-                                          style: TextStyle(fontSize: 20),
-                                        ),
+                  Padding(
+                    padding: EdgeInsets.all(1),
+                    child: Row(
+                      children: <Widget>[
+                        GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              mock = 'Quiz';
+                            });
+                          },
+                          child: Padding(
+                            padding: EdgeInsets.fromLTRB(18, 15, 1, 1),
+                            child: Container(
+                                height: 90,
+                                width: 170,
+                                decoration: BoxDecoration(
+                                  color: Colors.amberAccent,
+                                  borderRadius: BorderRadius.circular(16),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey,
+                                      blurRadius: 6.0,
+                                      spreadRadius: 1.0,
+                                      offset: Offset(
+                                        15.0,
+                                        15.0,
                                       ),
-                                      Padding(
-                                        padding: EdgeInsets.all(1),
-                                        child: Icon(LineAwesomeIcons
-                                            .arrow_circle_right),
-                                      )
-                                    ],
-                                  )),
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                mock = 'PYQ';
-                              });
-                            },
-                            child: Padding(
-                              padding: EdgeInsets.fromLTRB(10, 15, 1, 1),
-                              child: Container(
-                                  height: 90,
-                                  width: 170,
-                                  decoration: BoxDecoration(
-                                    color: Colors.amberAccent,
-                                    borderRadius: BorderRadius.circular(16),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Colors.grey,
-                                        blurRadius: 6.0,
-                                        spreadRadius: 1.0,
-                                        offset: Offset(
-                                          15.0,
-                                          15.0,
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                  child: Row(
-                                    children: <Widget>[
-                                      Padding(
-                                        padding:
-                                            EdgeInsets.fromLTRB(40, 1, 5, 1),
-                                        child: Text(
-                                          "PYQs",
-                                          style: TextStyle(fontSize: 20),
-                                        ),
+                                    )
+                                  ],
+                                ),
+                                child: Row(
+                                  children: <Widget>[
+                                    Padding(
+                                      padding:
+                                          EdgeInsets.fromLTRB(31, 1, 5, 1),
+                                      child: Text(
+                                        "Quizzes",
+                                        style: TextStyle(fontSize: 20),
                                       ),
-                                      Padding(
-                                        padding: EdgeInsets.all(1),
-                                        child: Icon(LineAwesomeIcons
-                                            .arrow_circle_right),
-                                      )
-                                    ],
-                                  )),
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.all(1),
-                      child: Row(
-                        children: <Widget>[
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(15, 30, 1, 1),
-                            child: Text(
-                              "Ongoing mock $mock\s :",
-                              style: TextStyle(
-                                  fontSize: 17, fontStyle: FontStyle.italic),
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.all(1),
-                      child: Conditioned(
-                        cases: [
-                          Case(
-                            mock == 'Test',
-                            builder: () => Column(
-                              children: testSeries
-                                  .map((TestSeries) =>
-                                      testseriesTemplate(TestSeries))
-                                  .toList(),
-                            ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.all(1),
+                                      child: Icon(LineAwesomeIcons
+                                          .arrow_circle_right),
+                                    )
+                                  ],
+                                )),
                           ),
-                          Case(
-                            mock == 'Quiz',
-                            builder: () => Column(
-                              children: quizSeries
-                                  .map((QuizSeries) =>
-                                      quizseriesTemplate(QuizSeries))
-                                  .toList(),
-                            ),
-                          ),
-                          Case(
-                            mock == 'PYQ',
-                            builder: () => Column(
-                              children: pyqSeries
-                                  .map((PYQSeries) =>
-                                      pyqseriesTemplate(PYQSeries))
-                                  .toList(),
-                            ),
-                          ),
-                        ],
-                        defaultBuilder: () => Column(
-                          children: testSeries
-                              .map((TestSeries) =>
-                                  testseriesTemplate(TestSeries))
-                              .toList(),
                         ),
+                        GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              mock = 'PYQ';
+                            });
+                          },
+                          child: Padding(
+                            padding: EdgeInsets.fromLTRB(10, 15, 1, 1),
+                            child: Container(
+                                height: 90,
+                                width: 170,
+                                decoration: BoxDecoration(
+                                  color: Colors.amberAccent,
+                                  borderRadius: BorderRadius.circular(16),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey,
+                                      blurRadius: 6.0,
+                                      spreadRadius: 1.0,
+                                      offset: Offset(
+                                        15.0,
+                                        15.0,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                                child: Row(
+                                  children: <Widget>[
+                                    Padding(
+                                      padding:
+                                          EdgeInsets.fromLTRB(40, 1, 5, 1),
+                                      child: Text(
+                                        "PYQs",
+                                        style: TextStyle(fontSize: 20),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.all(1),
+                                      child: Icon(LineAwesomeIcons
+                                          .arrow_circle_right),
+                                    )
+                                  ],
+                                )),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(1),
+                    child: Row(
+                      children: <Widget>[
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(15, 30, 1, 1),
+                          child: Text(
+                            "Ongoing mock $mock\s :",
+                            style: TextStyle(
+                                fontSize: 17, fontStyle: FontStyle.italic),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(1),
+                    child: Conditioned(
+                      cases: [
+                        Case(
+                          mock == 'Test',
+                          builder: () => Column(
+                            children: testSeries
+                                .map((TestSeries) =>
+                                    testseriesTemplate(TestSeries))
+                                .toList(),
+                          ),
+                        ),
+                        Case(
+                          mock == 'Quiz',
+                          builder: () => Column(
+                            children: quizSeries
+                                .map((QuizSeries) =>
+                                    quizseriesTemplate(QuizSeries))
+                                .toList(),
+                          ),
+                        ),
+                        Case(
+                          mock == 'PYQ',
+                          builder: () => Column(
+                            children: pyqSeries
+                                .map((PYQSeries) =>
+                                    pyqseriesTemplate(PYQSeries))
+                                .toList(),
+                          ),
+                        ),
+                      ],
+                      defaultBuilder: () => Column(
+                        children: testSeries
+                            .map((TestSeries) =>
+                                testseriesTemplate(TestSeries))
+                            .toList(),
                       ),
-                    )
-                  ],
-                ),
+                    ),
+                  )
+                ],
               ),
             ),
-          ],
-        ),
-      ),
-      bottomNavigationBar: BottomNavigation().getBottomNavigationbar(context),
+          ),
+        ],
     );
   }
 }

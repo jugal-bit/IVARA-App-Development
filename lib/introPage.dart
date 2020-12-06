@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ivara_app_development/teacher_app/mainFrame.dart';
 import './student_app/home/classDashboard.dart';
 import './student_app/layout/myDrawer.dart';
 import './student_app/layout/student_layout.dart';
@@ -131,7 +132,7 @@ class IntroPage extends StatelessWidget {
                   minWidth: width * 0.5,
                   child: RaisedButton(
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => ClassPage()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => MainFrame(0)));
                     },
                     color: Colors.white,
                     child: Text(

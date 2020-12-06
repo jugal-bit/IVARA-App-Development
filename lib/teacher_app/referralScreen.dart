@@ -34,7 +34,7 @@ class Referral extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.white,
-        drawer: TeacherDrawer().getDrawer(),
+        drawer: TeacherDrawer().getDrawer(context),
         body: SafeArea(
             child: Column(
           children: [
