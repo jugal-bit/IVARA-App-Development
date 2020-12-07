@@ -16,12 +16,14 @@ class _AttendancepState extends State<Attendancep> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      appBar: new AppBar(
+        title: new Text("Iventors"),
+      ),
       backgroundColor: Colors.black,
       body: Column(
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.fromLTRB(0, 50,0 ,50),
+            padding: const EdgeInsets.fromLTRB(0, 20,0 ,20),
             child: Container(
               child: Align(
                 alignment: Alignment.center,
@@ -56,6 +58,7 @@ class _AttendancepState extends State<Attendancep> {
                         Navigator.push(context,MaterialPageRoute(builder: (context)=>subject1p()));
                       },
                       color: Colors.white,
+
                       child: Text(
                         'Biology',
                         style: TextStyle(

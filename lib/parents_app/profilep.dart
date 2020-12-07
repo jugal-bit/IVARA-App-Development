@@ -40,7 +40,7 @@ class _ProfilepState extends State<Profilep> {
     // TODO: implement build
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("Profile"),
+        title: new Text("Iventors"),
       ),
 
       body:  Stack(
