@@ -11,12 +11,14 @@ class _Subject1acapState extends State<subject1acap> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      appBar: new AppBar(
+        title: new Text("Academics"),
+      ),
       backgroundColor: Colors.black,
       body: Column(
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.fromLTRB(0, 50,0 ,50),
+            padding: const EdgeInsets.fromLTRB(0, 20,0 ,50),
             child: Container(
               child: Align(
                 alignment: Alignment.center,
@@ -42,14 +44,14 @@ class _Subject1acapState extends State<subject1acap> {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(20,20,20,0),
                   child: Center(
-                    child: Text('LAST EXAM SCORE: 75%',
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 30.0,
-                          fontWeight: FontWeight.w600
-                      ),
+                      child: Text('LAST EXAM SCORE: 85%',
+                           style: TextStyle(
+                           color: Colors.black,
+                           fontSize: 30.0,
+                           fontWeight: FontWeight.w600
                     ),
                   ),
+                ),
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(20,30,20,0),

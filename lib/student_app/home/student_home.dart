@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
+import './classDashboard.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -24,41 +25,46 @@ class _HomePageState extends State<HomePage> {
                   children: <Widget>[
                     Padding(
                       padding: EdgeInsets.fromLTRB(12, 15, 10, 1),
-                      child: Container(
-                          width: 170,
-                          decoration: BoxDecoration(
-                            color: Colors.amberAccent,
-                            borderRadius: BorderRadius.circular(10),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.grey,
-                                blurRadius: 6.0,
-                                spreadRadius: 1.0,
-                                offset: Offset(
-                                  15.0,
-                                  15.0,
+                      child: GestureDetector(
+                        onTap: () => {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => ClassDashboard()))
+                        },
+                          child: Container(
+                            width: 170,
+                            decoration: BoxDecoration(
+                              color: Colors.amberAccent,
+                              borderRadius: BorderRadius.circular(10),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey,
+                                  blurRadius: 6.0,
+                                  spreadRadius: 1.0,
+                                  offset: Offset(
+                                    15.0,
+                                    15.0,
+                                  ),
+                                )
+                              ],
+                            ),
+                            child: Column(
+                              children: <Widget>[
+                            Padding(
+                              padding: EdgeInsets.all(10),
+                              child: Image.asset(
+                                "assets/icons/illustartion2.png",
+                                height: 120,
                                 ),
-                              )
-                            ],
-                          ),
-                          child: Column(
-                            children: <Widget>[
-                          Padding(
-                            padding: EdgeInsets.all(10),
-                            child: Image.asset(
-                              "assets/icons/illustartion2.png",
-                              height: 120,
-                              ),
-                          ),
-                              Padding(
-                                padding: EdgeInsets.all(4),
-                                child: Text(
-                                  "Class 7",
-                                  style: TextStyle(fontSize: 20),
-                                ),
-                              )
-                            ],
-                          )),
+                            ),
+                                Padding(
+                                  padding: EdgeInsets.all(4),
+                                  child: Text(
+                                    "Class 7",
+                                    style: TextStyle(fontSize: 20),
+                                  ),
+                                )
+                              ],
+                            )),
+                      ),
                     ),
                     Padding(
                       padding: EdgeInsets.fromLTRB(15, 15, 1, 1),

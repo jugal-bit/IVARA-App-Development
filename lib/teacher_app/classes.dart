@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'class.dart';
 import 'drawer.dart';
-import 'constants.dart';
+import '../student_app/constants.dart';
 
 class ClassPage extends StatefulWidget {
   @override

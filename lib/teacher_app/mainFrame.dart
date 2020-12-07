@@ -4,7 +4,7 @@ import 'package:ivara_app_development/teacher_app/classes.dart';
 import 'package:ivara_app_development/teacher_app/mentors.dart';
 import 'package:ivara_app_development/teacher_app/test/student_test.dart';
 import 'profilePage.dart';
-import 'constants.dart';
+import '../student_app/constants.dart';
 import 'drawer.dart';
 
 class MainFrame extends StatefulWidget {

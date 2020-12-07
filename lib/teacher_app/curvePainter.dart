@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ivara_app_development/teacher_app/constants.dart';
+import 'package:ivara_app_development/student_app/constants.dart';
 class CurvePainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {

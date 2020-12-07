@@ -23,7 +23,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_calendar_carousel: 1.4.12  
+  flutter_calendar_carousel: 1.4.12
+  table_calendar: ^2.3.1
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -35,6 +36,7 @@ dependencies:
   line_awesome_flutter: ^1.0.1
   condition: ^0.0.8
   foldable_sidebar: ^1.0.0
+  cell_calendar: ^0.1.2
 
 dev_dependencies:
   flutter_test:

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'signupPage.dart';
-import 'constants.dart';
+import '../student_app/constants.dart';
 
 class LoginPage extends StatefulWidget {
   @override

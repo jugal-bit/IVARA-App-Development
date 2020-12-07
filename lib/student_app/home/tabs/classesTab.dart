@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-import '../../student_app/constants.dart';
+import '../../constants.dart';
 
-class AcademicReportTab extends StatelessWidget {
+class ClassTab extends StatelessWidget {
 
   final List<Map<String, String>> questions = [
     {
-      'question':'Report 1',
+      'question':'Why Plants Take CO2 ?',
       'time':'3:19'
     },
     {
-      'question':'WReport 2',
+      'question':'Why Plants Take CO2 ?',
       'time':'3:20'
       }
     ];

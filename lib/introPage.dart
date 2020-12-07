@@ -10,7 +10,7 @@ import './parents_app/loginpageparents.dart';
 import 'homePage.dart';
 
 
-import 'teacher_app/constants.dart';
+import 'student_app/constants.dart';
 import 'teacher_app/loginPage.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 

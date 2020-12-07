@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ivara_app_development/teacher_app/notifications.dart';
 import 'constants.dart';
+
+
+import '../student_app/constants.dart';
 import 'drawer.dart';
 
 class Referral extends StatelessWidget {

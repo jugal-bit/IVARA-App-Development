@@ -1,6 +1,6 @@
 import 'package:ivara_app_development/teacher_app/drawer.dart';
 
-import 'constants.dart';
+import '../student_app/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:ivara_app_development/teacher_app/notifications.dart';
 class Faqs extends StatefulWidget {

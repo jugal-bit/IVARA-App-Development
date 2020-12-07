@@ -15,12 +15,14 @@ class _TeacherlistpState extends State<Teacherlistp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      appBar: new AppBar(
+        title: new Text("Iventors"),
+      ),
       backgroundColor: Colors.black,
       body: Column(
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.fromLTRB(0, 50,0 ,50),
+            padding: const EdgeInsets.fromLTRB(0, 20,0 ,30),
             child: Container(
               child: Align(
                 alignment: Alignment.center,
@@ -55,10 +57,11 @@ class _TeacherlistpState extends State<Teacherlistp> {
                         },
                         color: Colors.white,
                         child: Text(
-                          'Biology',
-                          style: TextStyle(
+                          'Tarun \n CTO',
+                          style: TextStyle
+                            (
                               color: Colors.black,
-                              fontSize: 40.0,
+                              fontSize: 20.0,
                               letterSpacing: 1),
                         ),
                         shape: RoundedRectangleBorder(
@@ -83,10 +86,10 @@ class _TeacherlistpState extends State<Teacherlistp> {
                         },
                         color: Colors.white,
                         child: Text(
-                          'Physics',
+                          'Sumit \n frontend',
                           style: TextStyle(
                               color: Colors.black,
-                              fontSize: 40.0,
+                              fontSize: 20.0,
                               letterSpacing: 1),
                         ),
                         shape: RoundedRectangleBorder(
@@ -111,10 +114,10 @@ class _TeacherlistpState extends State<Teacherlistp> {
                         },
                         color: Colors.white,
                         child: Text(
-                          'Chemistry',
+                          'Mayank \n frontend',
                           style: TextStyle(
                               color: Colors.black,
-                              fontSize: 40.0,
+                              fontSize: 20.0,
                               letterSpacing: 1),
                         ),
                         shape: RoundedRectangleBorder(
@@ -139,10 +142,10 @@ class _TeacherlistpState extends State<Teacherlistp> {
                         },
                         color: Colors.white,
                         child: Text(
-                          'History',
+                          'Aman \n forntend',
                           style: TextStyle(
                               color: Colors.black,
-                              fontSize: 40.0,
+                              fontSize: 20.0,
                               letterSpacing: 1),
                         ),
                         shape: RoundedRectangleBorder(
@@ -167,10 +170,10 @@ class _TeacherlistpState extends State<Teacherlistp> {
                         },
                         color: Colors.white,
                         child: Text(
-                          'Geography',
+                          'Tanishk \n project lead',
                           style: TextStyle(
                               color: Colors.black,
-                              fontSize: 40.0,
+                              fontSize: 20.0,
                               letterSpacing: 1),
                         ),
                         shape: RoundedRectangleBorder(
