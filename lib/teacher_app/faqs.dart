@@ -2,7 +2,7 @@ import 'package:ivara_app_development/teacher_app/drawer.dart';
 
 import 'constants.dart';
 import 'package:flutter/material.dart';
-
+import 'package:ivara_app_development/teacher_app/notifications.dart';
 class Faqs extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -19,7 +19,16 @@ class FaqsState extends State<Faqs> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        actions: [Icon(Icons.notifications)],
+        actions: [
+                      GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Announcement()));
+                          },
+                          child: Icon(Icons.notifications))
+                    ],
       ),
       drawer: TeacherDrawer().getDrawer(context),
           body: Container(

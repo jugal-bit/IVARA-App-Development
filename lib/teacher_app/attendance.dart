@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ivara_app_development/teacher_app/drawer.dart';
+import 'package:ivara_app_development/teacher_app/notifications.dart';
 
 import 'constants.dart';
 import 'curvePainter.dart';
@@ -124,7 +125,11 @@ class _AttendanceState extends State<Attendance> {
             Positioned(
               top: width * 0.04,
               left: width * 0.04,
-              child: Icon(Icons.notifications),
+              child: GestureDetector(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => Announcement()));
+                },
+                child: Icon(Icons.notifications)),
             )
           ])
         ],
@@ -198,9 +203,13 @@ class _AttendanceState extends State<Attendance> {
                                 height: height * 0.2,color: Colors.black,),
                             SizedBox(width:width*0.05),
                             Column(children: [
-                              Image.asset('./assets/dna.png',
-                                  height: height * 0.15),
                               SizedBox(height: height * 0.02),
+                              RotationTransition(
+                                turns: new AlwaysStoppedAnimation(40 / 360),
+                                                              child: Image.asset('./assets/dna.png',
+                                    height: height * 0.16),
+                              ),
+                              
                               Text(
                                 'Biology',
                                 style: TextStyle(

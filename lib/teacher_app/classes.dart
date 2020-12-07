@@ -24,32 +24,33 @@ class _ClassPageState extends State<ClassPage> {
               children: List.generate(2, (index) {
                 return Center(
                   child: GestureDetector(
+                    
                     onTap: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context) => ParticularClass()));
                     },
                     child: Stack(
-                      children: [
-                        Image.asset(classes[index]['image']),
-                        Positioned(
-                          top: height * 0.24,
-                          left: width * 0.13,
-                          child: Text(
-                            classes[index]['classnum'],
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: height * 0.035,
-                              fontWeight: FontWeight.bold,
-                              shadows: <Shadow>[
-                                Shadow(
-                                    offset: Offset(2, 3),
-                                    blurRadius: 7.0,
-                                    color: Colors.black),
-                              ],
+                        children: [
+                          Image.asset(classes[index]['image']),
+                          Positioned(
+                            top: height * 0.24,
+                            left: width * 0.13,
+                            child: Text(
+                              classes[index]['classnum'],
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: height * 0.035,
+                                fontWeight: FontWeight.bold,
+                                shadows: <Shadow>[
+                                  Shadow(
+                                      offset: Offset(2, 3),
+                                      blurRadius: 7.0,
+                                      color: Colors.black),
+                                ],
+                              ),
                             ),
-                          ),
-                        )
-                      ],
-                    ),
+                          )
+                        ],
+                      ),
                   ),
                 );
               }),
@@ -60,10 +61,19 @@ class _ClassPageState extends State<ClassPage> {
             children: [
               Container(
                 decoration: BoxDecoration(
+                  color:Colors.white,
                     border: Border.all(
                       color: Colors.black54,
                     ),
-                    borderRadius: BorderRadius.all(Radius.circular(20))),
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                    boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey,
+                    offset: Offset(10.0, 10.0), //(x,y)
+                    blurRadius: 6.0,
+                  ),
+                ],
+                    ),
                 child: Image.asset('./assets/skillDevelopment.jpg',
                     height: height * 0.25, width: width * 0.8),
               ),

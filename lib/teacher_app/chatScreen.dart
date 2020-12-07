@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:ivara_app_development/teacher_app/notifications.dart';
 import 'constants.dart';
 class ChatScreen extends StatefulWidget {
   @override
@@ -18,7 +19,11 @@ class _ChatScreenState extends State<ChatScreen> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        actions: [Icon(Icons.notifications)],
+        actions: [GestureDetector(
+          onTap:(){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => Announcement()));
+          },
+          child: Icon(Icons.notifications))],
       ),
       body: SafeArea(
         child: Column(

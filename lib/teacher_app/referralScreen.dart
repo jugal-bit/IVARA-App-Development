@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-
+import 'package:ivara_app_development/teacher_app/notifications.dart';
 import 'constants.dart';
 import 'drawer.dart';
 
@@ -50,6 +49,16 @@ class Referral extends StatelessWidget {
                   child: AppBar(
                     backgroundColor: Colors.transparent,
                     elevation: 0,
+                    actions: [
+                      GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Announcement()));
+                          },
+                          child: Icon(Icons.notifications))
+                    ],
                   ),
                 )
               ],
