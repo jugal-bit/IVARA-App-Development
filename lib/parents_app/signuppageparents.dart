@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../teacher_app/constants.dart';
+import '../student_app/constants.dart';
 
 import 'loginpageparents.dart';
 

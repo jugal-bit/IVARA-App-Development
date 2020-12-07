@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../student_app/constants.dart';
+import '../../constants.dart';
 
 class AcademicReportTab extends StatelessWidget {
 

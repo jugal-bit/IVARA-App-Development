@@ -36,6 +36,7 @@ dependencies:
   line_awesome_flutter: ^1.0.1
   condition: ^0.0.8
   foldable_sidebar: ^1.0.0
+  cell_calendar: ^0.1.2
 
 dev_dependencies:
   flutter_test:

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../constants.dart';
+import '../../student_app/constants.dart';
 
 class ClassTab extends StatelessWidget {
 

@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import './signuppageparents.dart';
-import '../teacher_app/constants.dart';
+import '../student_app/constants.dart';
 
 import 'homeparents.dart';
 

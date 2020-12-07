@@ -12,17 +12,20 @@ class Announcement extends StatelessWidget {
         backgroundColor: Colors.black,
         centerTitle: true,
         elevation: 1.0,
-        // leading: Builder(
-        //   builder: (BuildContext context) {
-        //     return IconButton(
-        //       icon: const Icon(Icons.menu),
-        //       onPressed: () {
-        //         Scaffold.of(context).openDrawer();
-        //       },
-        //       tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
-        //     );
-        //   },
-        // ),
+        leading: Builder(
+          builder: (BuildContext context) {
+            return IconButton(
+              icon: const Icon(
+                Icons.arrow_back,
+                color: Colors.amberAccent,
+              ),
+              tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+              onPressed: () {
+                Navigator.pop(context);
+              },
+            );
+          },
+        ),
         title: SizedBox(
             height: 35.0, child: Image.asset("assets/icons/logo_long.jpeg")),
         actions: [
@@ -44,24 +47,27 @@ class Announcement extends StatelessWidget {
                 'Announcements',
                 style: TextStyle(
                   fontSize: 30,
-        foreground: Paint()
-          ..style = PaintingStyle.stroke
-          ..strokeWidth = 2
-          ..color = Colors.grey[700],
+                  foreground: Paint()
+                    ..style = PaintingStyle.stroke
+                    ..strokeWidth = 2
+                    ..color = Colors.grey[700],
                 ),
-                ),
+              ),
             ),
             NotificationBar(
               message: 'Dear Students, today\'s class has been postponed.',
             ),
             NotificationBar(
-              message: 'Adipisicing do excepteur duis proident pariatur et nostrud do cillum anim. tate proident deserunt ullamco commodo velit pariatur non. Proident deserunt mollit ullamco sint mollit tempor. Enim irure commodo aliqua qui laborum ad ea amet enim qui amet. Esse nostrud deserunt magna do laborum ex ullamco Lorem exercitation.',
+              message:
+                  'Adipisicing do excepteur duis proident pariatur et nostrud do cillum anim. tate proident deserunt ullamco commodo velit pariatur non. Proident deserunt mollit ullamco sint mollit tempor. Enim irure commodo aliqua qui laborum ad ea amet enim qui amet. Esse nostrud deserunt magna do laborum ex ullamco Lorem exercitation.',
             ),
             NotificationBar(
-              message: 'Laboris velit officia fugiat aute irure et ex ad consectetur sint ullamco cupidatat. Pariatur tempor pariatur elit adipisicing. Quis magna quis ea sit do deserunt Lorem id excepteur quis pariatur incididunt.',
+              message:
+                  'Laboris velit officia fugiat aute irure et ex ad consectetur sint ullamco cupidatat. Pariatur tempor pariatur elit adipisicing. Quis magna quis ea sit do deserunt Lorem id excepteur quis pariatur incididunt.',
             ),
             NotificationBar(
-              message: 'Commodo non fugiat do amet dolore laboris ipsum ullamco quis. Dolore velit in magna sunt exercitation fugiat occaecat do sint eu ea aute. Qui aute ipsum id velit dolor exercitation culpa ad Lorem.',
+              message:
+                  'Commodo non fugiat do amet dolore laboris ipsum ullamco quis. Dolore velit in magna sunt exercitation fugiat occaecat do sint eu ea aute. Qui aute ipsum id velit dolor exercitation culpa ad Lorem.',
             )
           ],
         ),

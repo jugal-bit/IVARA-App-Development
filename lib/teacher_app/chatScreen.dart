@@ -1,23 +1,12 @@
+
 import 'package:flutter/material.dart';
-import 'package:line_awesome_flutter/line_awesome_flutter.dart';
-import '../constants.dart';
-
-// class ChatWithUs extends StatelessWidget {
-//   static String id = 'chatWithUs';
-//   const ChatWithUs({Key key}) : super(key: key);
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container(
-//     );
-//   }
-// }
-class ChatWithUs extends StatefulWidget {
+import '../student_app/constants.dart';
+class ChatScreen extends StatefulWidget {
   @override
-  _ChatWithUsState createState() => _ChatWithUsState();
+  _ChatScreenState createState() => _ChatScreenState();
 }
 
-class _ChatWithUsState extends State<ChatWithUs> {
+class _ChatScreenState extends State<ChatScreen> {
   String messageText;
   final messageTextController = TextEditingController();
 
@@ -27,31 +16,9 @@ class _ChatWithUsState extends State<ChatWithUs> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
-        centerTitle: true,
-        elevation: 1.0,
-        leading: Builder(
-          builder: (BuildContext context) {
-            return IconButton(
-              icon: const Icon(Icons.arrow_back,color: Colors.amberAccent,),
-              tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
-              onPressed: () {
-                Navigator.pop(context);
-              },
-            );
-          },
-        ),
-        title: SizedBox(
-            height: 35.0, child: Image.asset("assets/icons/logo_long.jpeg")),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.fromLTRB(1, 1, 10, 1),
-            child: Icon(
-              LineAwesomeIcons.volume_up,
-              size: 30,
-            ),
-          )
-        ],
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        actions: [Icon(Icons.notifications)],
       ),
       body: SafeArea(
         child: Column(
@@ -95,33 +62,13 @@ class MessageStream extends StatelessWidget {
   Widget build(BuildContext context) {
         List<Map<String,String>> messages = [
           {
-            'text':'Thanks.',
+            'text':'Hello',
             'sender':'Me'
           },
           {
-            'text':'No issues, let me look into your problem.',
-            'sender':'Teacher'
-          },
-          {
-            'text':'But I was having a litte bit of problem regarding online lectures, videos arent loading.',
-            'sender':'Me'
-          },
-          {
-            'text':'Sorry to disturb you at the uneven hour.',
-            'sender':'Me'
-          },
-          {
-            'text':'How can i help you ?',
-            'sender':'Teacher'
-          },
-          {
-            'text':'Hey David !',
-            'sender':'Teacher'
-          },
-          {
-            'text':'Hello.',
-            'sender':'Me'
-          },
+            'text':'Hii',
+            'sender':'Child'
+          }
         ];
         List<MessageBubble> messageBubbles = [];
         for (var message in messages) {
@@ -164,13 +111,13 @@ class MessageBubble extends StatelessWidget {
               topRight: isMe?Radius.circular(0):Radius.circular(30),
             ),
             elevation: 5,
-            color: isMe ? Colors.amberAccent : Colors.black,
+            color: isMe ? yellowDefault : Colors.white,
             child: Padding(
               padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
               child: Text(
                 text,
                 style: TextStyle(
-                  color: isMe?Colors.black:Colors.amber
+                  color: isMe?Colors.white:Colors.black
                 ),
               ),
             ),

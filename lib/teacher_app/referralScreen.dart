@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 
-import 'constants.dart';
+import '../student_app/constants.dart';
 import 'drawer.dart';
 
 class Referral extends StatelessWidget {
@@ -34,7 +34,7 @@ class Referral extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.white,
-        drawer: TeacherDrawer().getDrawer(),
+        drawer: TeacherDrawer().getDrawer(context),
         body: SafeArea(
             child: Column(
           children: [
