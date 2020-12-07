@@ -4,7 +4,7 @@ import 'package:condition/condition.dart';
 import 'package:ivara_app_development/student_app/test/mock_pyq.dart';
 import 'package:ivara_app_development/student_app/test/mock_quiz.dart';
 import 'package:ivara_app_development/student_app/test/mock_test.dart';
-import '../constants.dart';
+import '../../student_app/constants.dart';
 
 class TestPage extends StatefulWidget {
   TestPage();

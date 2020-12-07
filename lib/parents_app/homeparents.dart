@@ -49,12 +49,12 @@ class _HomeparState extends  State<Homepar>{
         onTap: onTappedBar,
           items: [
             BottomNavigationBarItem(
-          icon: Icon(Icons.date_range_sharp),
+          icon: Icon(Icons.date_range),
                 title: Text('Attendance'),
                 backgroundColor: Colors.white
     ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.integration_instructions),
+                icon: Icon(Icons.insert_chart),
                title: Text('Academics'),
                backgroundColor: Colors.white
             ),

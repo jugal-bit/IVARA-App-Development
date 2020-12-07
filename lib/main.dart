@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'homePage.dart';
-import 'teacher_app/constants.dart';
+import 'student_app/constants.dart';
 void main() {
   runApp(MyApp());
 }

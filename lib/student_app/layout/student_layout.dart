@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../test/student_test.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
-import '../../homePage.dart';
+import '../../student_app/home/student_home.dart';
 import '../announcement.dart';
 import '../student_mentor.dart';
 import '../student_profile.dart';
@@ -46,17 +46,17 @@ class _LayoutPageState extends State<LayoutPage> {
                   backgroundColor: Colors.black,
                   centerTitle: true,
                   elevation: 1.0,
-                  // leading: Builder(
-                  //   builder: (BuildContext context) {
-                  //     return IconButton(
-                  //       icon: const Icon(Icons.menu),
-                  //       onPressed: () {
-                  //         Scaffold.of(context).openDrawer();
-                  //       },
-                  //       tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
-                  //     );
-                  //   },
-                  // ),
+                  leading: Builder(
+                    builder: (BuildContext context) {
+                      return IconButton(
+                        icon: const Icon(Icons.menu, color: Colors.amberAccent,),
+                        onPressed: () {
+                          Scaffold.of(context).openDrawer();
+                        },
+                        tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+                      );
+                    },
+                  ),
                   title: SizedBox(
                       height: 35.0, child: Image.asset("assets/icons/logo_long.jpeg")),
                   actions: <Widget>[

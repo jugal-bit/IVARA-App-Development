@@ -5,7 +5,7 @@ import 'package:ivara_app_development/teacher_app/chatScreen.dart';
 import 'package:ivara_app_development/teacher_app/faqs.dart';
 import 'package:ivara_app_development/teacher_app/referralScreen.dart';
 
-import 'constants.dart';
+import '../student_app/constants.dart';
 import 'mainFrame.dart';
 class TeacherDrawer{
   Widget getDrawer(context){

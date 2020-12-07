@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 import 'introPage.dart';
-import 'teacher_app/constants.dart';
+import 'student_app/constants.dart';
 
 class HomePage extends StatefulWidget {
   @override

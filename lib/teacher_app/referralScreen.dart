@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 
-import 'constants.dart';
+import '../student_app/constants.dart';
 import 'drawer.dart';
 
 class Referral extends StatelessWidget {
